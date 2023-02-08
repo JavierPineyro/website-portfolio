@@ -1,0 +1,56 @@
+---
+import LinkNav from '@components/LinkNav.astro'
+import Github from '@components/icons/Github.astro'
+import LogosLink from '@components/LogosLink.astro'
+
+const Links = [
+  {
+    label: 'Inicio',
+    url: '#top',
+  },
+  {
+    label: 'Proyectos',
+    url: '#proyectos',
+  },
+  {
+    label: 'Tecnologías',
+    url: '#tecnologias',
+  },
+  {
+    label: 'Sobre Mi',
+    url: '#sobremi',
+  },
+]
+---
+
+<nav
+  class="flex justify-between items-center py-4 px-16 sticky top-0 backdrop-blur-2xl bg-primary/90"
+>
+  <div
+    class="w-20 h-20 rounded-full hover:scale-110 transition overflow-hidden"
+  >
+    <img
+      class="w-full h-full object-cover"
+      src="./foto-perfil.jpg"
+      alt="Foto de Javier Piñeyro"
+      title="Este soy yo :D"
+    />
+    <!-- <img
+      class="w-full h-full object-fill"
+      src="https://i.pravatar.cc/100"
+      alt="Foto de Javier Piñeyro"
+    /> -->
+  </div>
+  <div class="flex gap-4 items-center text-gray-100 leading-6">
+    {Links.map((link) => <LinkNav url={link.url} label={link.label} />)}
+    <span class="select-none mx-1">|</span>
+    <LogosLink url="https://github.com/javierpineyro">
+      <Github
+        width="30"
+        height="30"
+        seoTitle="Repository"
+        classNames="fill-whity-300 hover:fill-white"
+      />
+    </LogosLink>
+  </div>
+</nav>

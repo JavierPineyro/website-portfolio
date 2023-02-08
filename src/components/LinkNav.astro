@@ -1,0 +1,15 @@
+---
+type Props = {
+  url: string
+  label: string
+}
+
+const { url, label } = Astro.props
+---
+
+<a href={url} class="text-gray-100 text-xl relative group focus:text-cyan-500">
+  {label}
+  <span
+    class="absolute left-0 -bottom-1 w-0 bg-cyan-500 group-focus:w-full group-focus:h-[2px] group-hover:h-[2px] group-hover:transition-all transition-all group-hover:w-full"
+  ></span>
+</a>
