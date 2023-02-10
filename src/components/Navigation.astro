@@ -1,16 +1,16 @@
 ---
-import LinkNav from '@components/LinkNav.astro'
+import LinkNav from '@components/ui/LinkNav.astro'
 import Github from '@components/icons/Github.astro'
-import LogosLink from '@components/LogosLink.astro'
+import LogosLink from '@components/ui/LogosLink.astro'
 
-import { Links } from 'src/utils/constants'
+import { Links } from 'src/utils/data'
 ---
 
-<nav
+<header
   class="flex flex-col sm:flex-row justify-between items-center py-4 px-4 sm:px-16 sm:sticky sm:top-0 backdrop-blur-2xl bg-zinc-900/95"
 >
   <div
-    class="w-20 h-20 rounded-full hover:scale-110 transition overflow-hidden"
+    class="w-20 h-20 rounded-full md:hover:scale-110 transition overflow-hidden"
   >
     <img
       class="w-full h-full object-cover"
@@ -19,7 +19,8 @@ import { Links } from 'src/utils/constants'
       title="Este soy yo :D"
     />
   </div>
-  <div
+
+  <nav
     class="flex flex-wrap gap-3 mt-4 justify-center sm:mt-0 sm:flex-nowrap sm:gap-4 items-center text-gray-100 sm:leading-6"
   >
     {Links.map((link) => <LinkNav url={link.url} label={link.label} />)}
@@ -32,5 +33,5 @@ import { Links } from 'src/utils/constants'
         classNames="hidden sm:inline-block fill-whity-300 hover:fill-white"
       />
     </LogosLink>
-  </div>
-</nav>
+  </nav>
+</header>
