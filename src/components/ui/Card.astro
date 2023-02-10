@@ -1,0 +1,46 @@
+---
+import ExternalLink from '@components/ui/ExternalLink.astro'
+import Github from '@components/icons/Github.astro'
+import LogosLink from '@components/ui/LogosLink.astro'
+import Tag from '@components/ui/Tag.astro'
+
+type Props = {
+  title: string
+  description: string
+  url: string
+  repo: string
+  stack: Array<string>
+}
+
+const { title, description, stack, url, repo } = Astro.props
+---
+
+<div
+  class="bg-primary flex flex-col gap-2 border-cyan-500 py-4 px-3 text-gray-400 border-[1px] rounded"
+>
+  <div class="flex justify-between">
+    <ExternalLink
+      url={url}
+      className="text-white font-semibold hover:underline"
+    >
+      {title}
+      {'->'}
+    </ExternalLink>
+    <LogosLink url={repo}>
+      <Github
+        width="20"
+        height="20"
+        seoTitle="Repository"
+        classNames="fill-whity-300 hover:fill-white"
+      />
+    </LogosLink>
+  </div>
+  <p class="text-sm mb-2">{description}</p>
+  <div class="flex gap-1">
+    {
+      stack.map((item) => {
+        return <Tag>{item}</Tag>
+      })
+    }
+  </div>
+</div>

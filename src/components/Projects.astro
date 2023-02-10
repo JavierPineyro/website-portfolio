@@ -1,0 +1,19 @@
+---
+import Subtitle from '@components/ui/Subtitle.astro'
+import Card from './ui/Card.astro'
+
+import { Projects } from 'src/utils/data'
+
+const itemProject = Projects[0]
+---
+
+<section id="proyectos" class="flex flex-col gap-6 text-white mt-10">
+  <Subtitle>Proyectos</Subtitle>
+  <Card
+    title={itemProject.title}
+    stack={itemProject.stack}
+    description={itemProject.description}
+    url={itemProject.url}
+    repo={itemProject.repo}
+  />
+</section>
