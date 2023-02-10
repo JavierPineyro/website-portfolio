@@ -1,47 +1,18 @@
 ---
-import ExternalLink from '@components/ExternalLink.astro'
-import Github from '@components/icons/Github.astro'
-import Gmail from '@components/icons/Gmail.astro'
 import Layout from '@layouts/Layout.astro'
+
+import Navigation from '@components/Navigation.astro'
+import BannerSection from '@components/BannerSection.astro'
 ---
 
 <Layout
   title="Inicio | Porfolio"
   description="FullStack Developer | Dario Javier Piñeyro"
 >
-  <main class="md:max-w-5xl px-4 md:px-0 bg-primary mx-auto">
-    <section
-      class="text-white [&>h1]:text-7xl [&>div>span]:text-6xl mt-6 font-extrabold flex flex-col gap-y-4"
-    >
-      <h1 class="">
-        Hey! Soy Javier Piñeyro<span class="hidden md:inline-block">🥇</span>
-      </h1>
-      <div class="w-fit mb-8">
-        <span
-          class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-cyan-300 to-cyan-500"
-        >
-          Fullstack Developer
-        </span>
-        <span>💻</span>
-      </div>
-      <div class="flex items-center gap-2">
-        <p class="text-2xl">Encuéntrame en:</p>
-        <ExternalLink
-          seoTitle="Github Profile"
-          url="https://github.com/javierpineyro"
-        >
-          Github
-          <Github
-            width="30"
-            height="30"
-            classNames="fill-whity-300 group-hover:fill-white"
-          />
-        </ExternalLink>
-        <ExternalLink seoTitle="Email Address" url="https://gmail.com/">
-          Email <!-- Cambiar por Linkedin -->
-          <Gmail width="30" height="30" />
-        </ExternalLink>
-      </div>
-    </section>
+  <Navigation />
+
+  <main class="max-w-5xl px-4 sm:px-0 bg-primary mx-auto">
+    <BannerSection />
+    <section id="proyectos" class=""></section>
   </main>
 </Layout>

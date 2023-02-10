@@ -1,0 +1,47 @@
+---
+import ExternalLink from '@components/ExternalLink.astro'
+import Github from '@components/icons/Github.astro'
+import LinkedIn from '@components/icons/LinkedIn.astro'
+---
+
+<section
+  id="banner"
+  class="text-white font-extrabold [&>div>span]:text-3xl mt-16 my-auto flex flex-col gap-2 md:[&>div>span]:text-6xl md:gap-5"
+>
+  <h1 class="text-4xl sm:text-5xl md:text-7xl">
+    Hey! Soy Javier Piñeyro<span class="text-3xl sm:text-4xl md:text-6xl"
+      >🥇</span
+    >
+  </h1>
+  <div class="w-fit mb-10 sm:mb-20">
+    <span
+      class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-cyan-300 to-cyan-500"
+    >
+      Fullstack Developer
+    </span>
+    <span>💻</span>
+  </div>
+  <div class="flex flex-col gap-2 sm:flex-row sm:gap-1">
+    <p class="text-xl sm:text-2xl">Encuéntrame en:</p>
+    <div class="flex flex-wrap gap-2 sm:gap-4">
+      <ExternalLink
+        seoTitle="Github Profile"
+        url="https://github.com/javierpineyro"
+      >
+        Github
+        <Github
+          width="30"
+          height="30"
+          classNames="fill-whity-300 group-hover:fill-white"
+        />
+      </ExternalLink>
+      <ExternalLink
+        seoTitle="LinkedIn Profile"
+        url="https://www.linkedin.com/in/dario-javier-piñeyro"
+      >
+        LinkedIn
+        <LinkedIn width="30" height="30" />
+      </ExternalLink>
+    </div>
+  </div>
+</section>
