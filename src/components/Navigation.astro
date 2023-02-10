@@ -3,28 +3,11 @@ import LinkNav from '@components/LinkNav.astro'
 import Github from '@components/icons/Github.astro'
 import LogosLink from '@components/LogosLink.astro'
 
-const Links = [
-  {
-    label: 'Inicio',
-    url: '#top',
-  },
-  {
-    label: 'Proyectos',
-    url: '#proyectos',
-  },
-  {
-    label: 'Tecnologías',
-    url: '#tecnologias',
-  },
-  {
-    label: 'Sobre Mi',
-    url: '#sobremi',
-  },
-]
+import { Links } from 'src/utils/constants'
 ---
 
 <nav
-  class="flex justify-between items-center py-4 px-16 sticky top-0 backdrop-blur-2xl bg-primary/90"
+  class="flex flex-col sm:flex-row justify-between items-center py-4 px-4 sm:px-16 sm:sticky sm:top-0 backdrop-blur-2xl bg-zinc-900/95"
 >
   <div
     class="w-20 h-20 rounded-full hover:scale-110 transition overflow-hidden"
@@ -35,21 +18,18 @@ const Links = [
       alt="Foto de Javier Piñeyro"
       title="Este soy yo :D"
     />
-    <!-- <img
-      class="w-full h-full object-fill"
-      src="https://i.pravatar.cc/100"
-      alt="Foto de Javier Piñeyro"
-    /> -->
   </div>
-  <div class="flex gap-4 items-center text-gray-100 leading-6">
+  <div
+    class="flex flex-wrap gap-3 mt-4 justify-center sm:mt-0 sm:flex-nowrap sm:gap-4 items-center text-gray-100 sm:leading-6"
+  >
     {Links.map((link) => <LinkNav url={link.url} label={link.label} />)}
-    <span class="select-none mx-1">|</span>
+    <span class="hidden sm:inline-block select-none mx-1">|</span>
     <LogosLink url="https://github.com/javierpineyro">
       <Github
         width="30"
         height="30"
         seoTitle="Repository"
-        classNames="fill-whity-300 hover:fill-white"
+        classNames="hidden sm:inline-block fill-whity-300 hover:fill-white"
       />
     </LogosLink>
   </div>
