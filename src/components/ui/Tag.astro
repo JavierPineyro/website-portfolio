@@ -1,3 +1,11 @@
-<span class="text-sm uppercase rounded px-2 border-2 border-gray-400">
+---
+type Props = {
+  className?: string
+}
+
+const { className } = Astro.props
+---
+
+<span class={`${className} text-sm uppercase rounded px-2 border-[1px]`}>
   <slot />
 </span>

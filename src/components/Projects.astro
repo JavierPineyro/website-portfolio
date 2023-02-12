@@ -3,17 +3,27 @@ import Subtitle from '@components/ui/Subtitle.astro'
 import Card from './ui/Card.astro'
 
 import { Projects } from 'src/utils/data'
-
-const itemProject = Projects[0]
 ---
 
-<section id="proyectos" class="flex flex-col gap-6 text-white mt-10">
+<section
+  id="proyectos"
+  class="flex flex-col gap-6 text-white mt-10 mb-10 sm:mt-20 sm:mb-20"
+>
   <Subtitle>Proyectos</Subtitle>
-  <Card
-    title={itemProject.title}
-    stack={itemProject.stack}
-    description={itemProject.description}
-    url={itemProject.url}
-    repo={itemProject.repo}
-  />
+  <div class="flex flex-col gap-6 sm:grid sm:grid-cols-2">
+    {
+      Projects.map((item) => {
+        return (
+          <Card
+            className=""
+            title={item.title}
+            stack={item.stack}
+            description={item.description}
+            url={item.url}
+            repo={item.repo}
+          />
+        )
+      })
+    }
+  </div>
 </section>

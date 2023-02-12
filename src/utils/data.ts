@@ -23,27 +23,43 @@ export const Projects = [
     description: "Un mini juego construido con React",
     url: "https://tic-tac-toe-vite-javierpineyro.vercel.app/",
     repo: "https://github.com/JavierPineyro/tic-tac-toe-vite",
-    stack: ["React", "Tailwind", "Vite"]
+    stack: [
+      {name: "React", color: "text-pink-400 border-pink-400"}, 
+      {name: "Tailwind", color: "text-cyan-300 border-cyan-300"}, 
+      {name: "Vite", color: "text-orange-500 border-orange-500"}
+    ]
   },
   {
     title: "Search Country App",
     description: "Web app para buscar información sobre países",
     url: "https://search-country-javierpineyro.vercel.app/",
     repo: "https://github.com/JavierPineyro/next-country",
-    stack: ["NextJs", "React", "Typescript"]
+    stack: [
+      {name: "NextJs", color:"text-indigo-400 border-indigo-400"}, 
+      {name: "React", color: "text-pink-400 border-pink-400"}, 
+      {name: "Typescript", color:"text-sky-500 border-sky-500"}
+    ]
   },
   {
     title: "Advency challenge",
     description: "Code challenge de navidad de GoncyPozzo",
     url: "https://search-country-javierpineyro.vercel.app/",
     repo: "https://github.com/JavierPineyro/advency-challenge",
-    stack: ["React", "ChakraUI", "Framer Motion"]
+    stack: [
+      {name: "React", color: "text-pink-400 border-pink-400"}, 
+      {name: "ChakraUI", color:"text-lime-500 border-lime-500"}, 
+      {name: "Javascript", color:"text-yellow-500 border-yellow-500"}
+    ]
   },
   {
     title: "TODO app",
     description: "Aplicación Web TO-DO para anotar tareas",
     url: "https://search-country-javierpineyro.vercel.app/",
     repo: "https://github.com/JavierPineyro/advency-challenge",
-    stack: ["React", "ChakraUI", "Vite"]
+    stack: [
+      {name: "React", color: "text-pink-400 border-pink-400"}, 
+      {name: "ChakraUI", color:"text-lime-500 border-lime-500"}, 
+      {name: "Vite", color: "text-orange-500 border-orange-500"}
+    ]
   }
 ]
