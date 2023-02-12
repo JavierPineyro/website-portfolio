@@ -6,7 +6,7 @@ module.exports = withAnimations({
   theme: {
     extend: {
       colors: {
-        primary: '#202020',
+        primary: '#151515',
         whity: {
           100: '#e3e3e3',
           300: '#c3c3c3',
