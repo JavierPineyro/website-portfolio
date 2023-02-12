@@ -26,7 +26,16 @@ const { title, description } = Astro.props
 <style>
   html,
   body {
-    background-color: #202020;
+    background-color: #151515;
     scroll-behavior: smooth;
+  }
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :global(html) {
+      scroll-behavior: auto;
+    }
   }
 </style>

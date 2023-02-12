@@ -1,3 +1,11 @@
-<h2 class="font-bold uppercase">
+---
+type Props = {
+  className?: String
+}
+
+const { className } = Astro.props
+---
+
+<h3 class={`sm:text-xl font-bold uppercase ${className}`}>
   <slot />
-</h2>
+</h3>

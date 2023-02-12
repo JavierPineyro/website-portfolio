@@ -8,12 +8,12 @@ import LinkedIn from '@components/icons/LinkedIn.astro'
   id="hero"
   class="text-white font-extrabold [&>div>span]:text-3xl mt-16 my-auto flex flex-col gap-2 md:[&>div>span]:text-6xl md:gap-5"
 >
-  <h1 class="text-4xl sm:text-5xl md:text-7xl">
-    Hey! Soy Javier Piñeyro<span class="text-3xl sm:text-4xl md:text-6xl"
-      >🥇</span
+  <h1 class="text-3xl sm:text-5xl md:text-7xl">
+    <span class="hidden sm:inline-block">Hey!</span> Soy Javier Piñeyro<span
+      class="text-3xl sm:text-4xl md:text-6xl">🥇</span
     >
   </h1>
-  <div class="w-fit mb-10 sm:mb-20">
+  <div class="w-fit mb-10 sm:mb-14">
     <span
       class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-cyan-300 to-cyan-500"
     >
@@ -21,28 +21,28 @@ import LinkedIn from '@components/icons/LinkedIn.astro'
     </span>
     <span>💻</span>
   </div>
-  <div class="flex flex-col gap-2 sm:flex-row sm:gap-1">
-    <p class="text-xl sm:text-2xl">Encuéntrame en:</p>
-    <div class="flex flex-wrap gap-2 sm:gap-4">
+  <div class="flex flex-col gap-2 sm:my-auto sm:flex-row sm:gap-1">
+    <p class="text-xl font-semibold sm:text-2xl">Encuéntrame en:</p>
+    <div class="flex flex-wrap gap-2 sm:gap-4 sm:ml-2">
       <ExternalLink
-        className="hover:bg-cyan-500 px-4 py-1 bg-zinc-900 text-whity-300 hover:text-white rounded"
+        className="hover:text-cyan-500 active:bg-gray-700 active:text-cyan-500 text-white border-cyan-500 rounded border-[1px] font-semibold px-4 py-1"
         seoTitle="Github Profile"
         url="https://github.com/javierpineyro"
       >
         Github
         <Github
-          width="30"
-          height="30"
-          classNames="fill-whity-300 group-hover:fill-white"
+          width="24"
+          height="24"
+          classNames="fill-white group-active:fill-cyan-500 group-hover:fill-cyan-500"
         />
       </ExternalLink>
       <ExternalLink
-        className="hover:bg-cyan-500 px-4 py-1 bg-zinc-900 text-whity-300 hover:text-white rounded"
+        className=" hover:text-cyan-500 active:bg-gray-700 active:text-cyan-500 text-white border-cyan-500 rounded border-[1px] font-semibold px-4 py-1"
         seoTitle="LinkedIn Profile"
         url="https://www.linkedin.com/in/dario-javier-piñeyro"
       >
         LinkedIn
-        <LinkedIn width="30" height="30" />
+        <LinkedIn width="21" height="21" />
       </ExternalLink>
     </div>
   </div>

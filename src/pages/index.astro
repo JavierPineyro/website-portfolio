@@ -4,6 +4,7 @@ import Layout from '@layouts/Layout.astro'
 import Navigation from '@components/Navigation.astro'
 import Hero from '@components/Hero.astro'
 import Projects from '@components/Projects.astro'
+import ExternalLink from '@components/ui/ExternalLink.astro'
 ---
 
 <Layout
@@ -12,8 +13,17 @@ import Projects from '@components/Projects.astro'
 >
   <Navigation />
 
-  <main class="max-w-5xl px-4 sm:px-0 bg-primary mx-auto">
+  <main class="max-w-5xl px-4 sm:px-6 mx-auto">
     <Hero />
     <Projects />
   </main>
+  <footer class="flex justify-center text-gray-100 py-6 px-4 sm:px-16">
+    Sitio creado por <ExternalLink
+      className="underline ml-1 hover:text-cyan-500"
+      url="https://github.com/javierpineyro"
+    >
+      Javier Piñeyro
+    </ExternalLink>
+    🥇
+  </footer>
 </Layout>
