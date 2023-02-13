@@ -5,6 +5,11 @@ type Props = {
 const { url } = Astro.props
 ---
 
-<a class="h-fit" href={url} target="_blank" rel="noopener noreferrer">
+<a
+  class="h-fit hover:text-cyan-500 active:text-cyan-600"
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+>
   <slot />
 </a>

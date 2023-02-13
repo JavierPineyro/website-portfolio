@@ -1,0 +1,32 @@
+---
+import ExternalLink from '@components/ui/ExternalLink.astro'
+import Github from '@components/icons/Github.astro'
+import LinkedIn from '@components/icons/LinkedIn.astro'
+import LogosLink from '@components/ui/LogosLink.astro'
+---
+
+<footer
+  class="flex flex-col gap-2 text-gray-100 bg-zinc-900/95 py-6 px-4 sm:px-16"
+>
+  <p class="flex justify-center text-md">
+    Sitio creado por <ExternalLink
+      className="underline ml-1 hover:text-cyan-500"
+      url="https://github.com/javierpineyro"
+    >
+      Javier Piñeyro
+    </ExternalLink>
+    🥇
+  </p>
+  <div class="flex gap-4 w-full items-center justify-center">
+    <LogosLink url="https://github.com/javierpineyro">
+      <Github
+        classNames="fill-white hover:fill-cyan-500 transition"
+        width="22"
+        height="22"
+      />
+    </LogosLink>
+    <LogosLink url="https://www.linkedin.com/in/dario-javier-piñeyro">
+      <LinkedIn className="transition" width="20" height="20" />
+    </LogosLink>
+  </div>
+</footer>

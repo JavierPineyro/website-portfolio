@@ -1,10 +1,11 @@
 ---
-const { width, height } = Astro.props
+const { width, height, className } = Astro.props
 ---
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
   style="vertical-align: -0.125em;"
+  class={`${className}`}
   width={width}
   height={height}
   viewBox="0 0 20 20"
