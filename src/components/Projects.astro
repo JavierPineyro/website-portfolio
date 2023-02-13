@@ -1,15 +1,13 @@
 ---
 import Subtitle from '@components/ui/Subtitle.astro'
 import Card from './ui/Card.astro'
+import Section from '@components/ui/Section.astro'
 
 import { Projects } from 'src/utils/data'
 ---
 
-<section
-  id="proyectos"
-  class="flex flex-col gap-6 text-white mt-10 mb-10 sm:mt-20 sm:mb-20"
->
-  <Subtitle>Proyectos</Subtitle>
+<Section id="proyectos" className="flex flex-col gap-6 text-white">
+  <Subtitle className="mt-5 sm:mt-0">Proyectos</Subtitle>
   <div class="flex flex-col gap-6 sm:grid sm:grid-cols-2">
     {
       Projects.map((item) => {
@@ -26,4 +24,4 @@ import { Projects } from 'src/utils/data'
       })
     }
   </div>
-</section>
+</Section>
