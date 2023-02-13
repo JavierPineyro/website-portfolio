@@ -43,7 +43,7 @@ export const Projects = [
   {
     title: "Advency challenge",
     description: "Code challenge de navidad de GoncyPozzo",
-    url: "https://search-country-javierpineyro.vercel.app/",
+    url: "https://javierpineyro.github.io/advency-challenge/",
     repo: "https://github.com/JavierPineyro/advency-challenge",
     stack: [
       {name: "React", color: "text-pink-400 border-pink-400"}, 
@@ -54,8 +54,8 @@ export const Projects = [
   {
     title: "TODO app",
     description: "Aplicación Web TO-DO para anotar tareas",
-    url: "https://search-country-javierpineyro.vercel.app/",
-    repo: "https://github.com/JavierPineyro/advency-challenge",
+    url: "https://javierpineyro.github.io/to-do-chakra/",
+    repo: "https://github.com/JavierPineyro/to-do-chakra",
     stack: [
       {name: "React", color: "text-pink-400 border-pink-400"}, 
       {name: "ChakraUI", color:"text-lime-500 border-lime-500"}, 
