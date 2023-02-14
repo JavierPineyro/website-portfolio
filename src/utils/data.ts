@@ -20,7 +20,7 @@ export const Links = [
 export const Projects = [
   {
     title: "Juego Tic-Tac-Toe",
-    description: "Un mini juego construido con React",
+    description: "Mini juego construído con React y Tailwind",
     url: "https://tic-tac-toe-vite-javierpineyro.vercel.app/",
     repo: "https://github.com/JavierPineyro/tic-tac-toe-vite",
     stack: [
@@ -53,7 +53,7 @@ export const Projects = [
   },
   {
     title: "TODO app",
-    description: "Aplicación Web TO-DO para anotar tareas",
+    description: "Aplicación Web TO-DO para organizar tareas",
     url: "https://javierpineyro.github.io/to-do-chakra/",
     repo: "https://github.com/JavierPineyro/to-do-chakra",
     stack: [
