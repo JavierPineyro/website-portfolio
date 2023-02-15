@@ -18,6 +18,9 @@ const { title, description } = Astro.props
   </head>
   <body>
     <div class="animate-fadeIn min-h-screen">
+      <p class="before:content-['🔨'] w-full text-center text-yellow-300 p-3">
+        Sitio web en construcción🔨
+      </p>
       <slot />
     </div>
   </body>
@@ -37,7 +40,6 @@ const { title, description } = Astro.props
     :global(html) {
       scroll-behavior: auto;
     }
-
     /* @font-face {
       font-family: 'GeneralSans';
       src: url('/fonts/GeneralSans-Regular.woff2') format('woff2');

@@ -7,7 +7,7 @@ type Props = {
 const { url, label, className } = Astro.props
 ---
 
-<a
+<!-- <a
   href={url}
   class={`text-gray-100 text-xl relative group focus:text-cyan-500`}
 >
@@ -15,4 +15,46 @@ const { url, label, className } = Astro.props
   <span
     class={`absolute left-0 -bottom-1 w-0 bg-cyan-500 group-focus:w-full group-focus:h-[2px] group-hover:h-[2px] group-hover:transition-all transition-all group-hover:w-full`}
   ></span>
+</a> -->
+<a href={url} class={`text-gray-100 text-xl`}>
+  {label}
 </a>
+
+<style>
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    font-family: inherit;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+
+  a:focus,
+  a:hover {
+    color: #09f;
+  }
+
+  a:focus:after,
+  a:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+
+  a:after {
+    content: '';
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #09f;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+</style>

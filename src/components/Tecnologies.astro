@@ -1,8 +1,38 @@
 ---
 import Section from '@ui/Section.astro'
-import Subtitle from './ui/Subtitle.astro'
+import Subtitle from '@ui/Subtitle.astro'
+import Git from '@components/icons/Git.astro'
+import NextJs from '@components/icons/NextJs.astro'
+import TailwindCss from '@components/icons/TailwindCss.astro'
+import React from '@components/icons/React.astro'
+import NodeJs from '@components/icons/NodeJs.astro'
+import Javascript from '@components/icons/Javascript.astro'
+import Typescript from './icons/Typescript.astro'
 ---
 
 <Section id="tecnologias" className="text-white">
   <Subtitle>Tecnologias</Subtitle>
+  <div class="flex gap-2">
+    <div>
+      <NextJs />
+    </div>
+    <div>
+      <Typescript />
+    </div>
+    <div>
+      <React />
+    </div>
+    <div>
+      <Javascript />
+    </div>
+    <div>
+      <NodeJs />
+    </div>
+    <div>
+      <TailwindCss />
+    </div>
+    <div>
+      <Git />
+    </div>
+  </div>
 </Section>
