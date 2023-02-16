@@ -4,10 +4,13 @@ import Github from '@components/icons/Github.astro'
 import LogosLink from '@components/ui/LogosLink.astro'
 
 import { Links } from 'src/utils/data'
+
+//bg-zinc-900/95
+//text-gray-100
 ---
 
 <header
-  class="flex flex-col sm:flex-row justify-between items-center py-4 px-4 sm:px-16 sm:sticky sm:top-0 backdrop-blur-2xl bg-zinc-900/95"
+  class="flex flex-col sm:flex-row justify-between items-center py-4 px-4 sm:px-16 sm:sticky sm:top-0 backdrop-blur-2xl shadow-md bg-navigation/95"
 >
   <div
     class="w-20 h-20 rounded-full md:hover:scale-110 transition overflow-hidden"
@@ -23,7 +26,7 @@ import { Links } from 'src/utils/data'
   </div>
 
   <nav
-    class="flex flex-wrap gap-3 mt-4 justify-center sm:mt-0 sm:flex-nowrap sm:gap-4 items-center text-gray-100 sm:leading-6"
+    class="flex font-semibold flex-wrap gap-3 mt-4 justify-center sm:mt-0 sm:flex-nowrap sm:gap-4 items-center text-lightGray sm:leading-6"
   >
     {Links.map((link) => <LinkNav url={link.url} label={link.label} />)}
     <span class="hidden sm:inline-block select-none mx-1">|</span>
@@ -32,7 +35,7 @@ import { Links } from 'src/utils/data'
         width="30"
         height="30"
         seoTitle="Repository"
-        classNames="hidden sm:inline-block fill-gray-100 hover:fill-cyan-500 transition"
+        classNames="hidden transition fill-lightGray group-hover:fill-main sm:inline-block "
       />
     </LogosLink>
   </nav>

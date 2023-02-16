@@ -1,0 +1,11 @@
+---
+const { label } = Astro.props
+---
+
+<div
+  title={label}
+  class="bg-navigation text-xs gap-2 rounded-md flex flex-col flex-1 items-center justify-between w-24 h-24 p-4 shadow-md"
+>
+  <slot />
+  <span>{label}</span>
+</div>

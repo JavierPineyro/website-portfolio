@@ -4,7 +4,7 @@ module.exports = {
   singleQuote: true,
   jsxSingleQuote: true,
   tabWidth: 2,
-  trailingComma: 'none',
+  trailingComma: 0,
   useTabs: true,
   overrides: [
     {

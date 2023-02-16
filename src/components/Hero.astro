@@ -7,7 +7,7 @@ import Section from '@components/ui/Section.astro'
 
 <Section
   id="hero"
-  className="text-white font-extrabold [&>div>span]:text-3xl mt-16 my-auto flex flex-col gap-2 md:[&>div>span]:text-6xl md:gap-5"
+  className="text-white font-extrabold [&>div>span]:text-3xl my-auto flex flex-col gap-2 md:[&>div>span]:text-6xl md:gap-5"
 >
   <h1 class="text-3xl sm:text-5xl md:text-7xl">
     <span class="hidden sm:inline-block">Hey!</span> Soy Javier Piñeyro<span
@@ -16,7 +16,7 @@ import Section from '@components/ui/Section.astro'
   </h1>
   <div class="w-fit mb-10 sm:mb-14">
     <span
-      class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-cyan-300 to-cyan-500"
+      class="bg-clip-text text-transparent bg-gradient-to-r from-light-main via-mid-main to-main"
     >
       Fullstack Developer
     </span>
@@ -26,7 +26,7 @@ import Section from '@components/ui/Section.astro'
     <p class="text-md uppercase font-bold sm:text-xl">Encuéntrame en:</p>
     <div class="flex flex-wrap gap-2 sm:gap-4 sm:ml-2">
       <ExternalLink
-        className="hover:text-cyan-500 active:bg-gray-700 active:text-cyan-500 text-white border-cyan-500 rounded border-[1px] font-semibold px-4 py-1"
+        className="hover:text-main active:bg-gray-00 active:bg-navigation active:text-main text-white border-main rounded border-[1px] font-semibold px-4 py-1"
         seoTitle="Github Profile"
         url="https://github.com/javierpineyro"
       >
@@ -34,11 +34,11 @@ import Section from '@components/ui/Section.astro'
         <Github
           width="24"
           height="24"
-          classNames="fill-white group-active:fill-cyan-500 group-hover:fill-cyan-500"
+          classNames="fill-white group-hover:fill-main"
         />
       </ExternalLink>
       <ExternalLink
-        className=" hover:text-cyan-500 active:bg-gray-700 active:text-cyan-500 text-white border-cyan-500 rounded border-[1px] font-semibold px-4 py-1"
+        className=" hover:text-main active:bg-gray-00 active:bg-navigation active:text-main text-white border-main rounded border-[1px] font-semibold px-4 py-1"
         seoTitle="LinkedIn Profile"
         url="https://www.linkedin.com/in/dario-javier-piñeyro"
       >

@@ -8,31 +8,32 @@ import React from '@components/icons/React.astro'
 import NodeJs from '@components/icons/NodeJs.astro'
 import Javascript from '@components/icons/Javascript.astro'
 import Typescript from './icons/Typescript.astro'
+import MiniBox from './ui/MiniBox.astro'
 ---
 
-<Section id="tecnologias" className="text-white">
+<Section id="tecnologias" className="gap-6">
   <Subtitle>Tecnologias</Subtitle>
-  <div class="flex gap-2">
-    <div>
+  <div class="flex flex-wrap gap-2">
+    <MiniBox label="NextJs">
       <NextJs />
-    </div>
-    <div>
+    </MiniBox>
+    <MiniBox label="Typescript">
       <Typescript />
-    </div>
-    <div>
+    </MiniBox>
+    <MiniBox label="React">
       <React />
-    </div>
-    <div>
+    </MiniBox>
+    <MiniBox label="Javascript">
       <Javascript />
-    </div>
-    <div>
+    </MiniBox>
+    <MiniBox label="NodeJs">
       <NodeJs />
-    </div>
-    <div>
+    </MiniBox>
+    <MiniBox label="Tailwind">
       <TailwindCss />
-    </div>
-    <div>
+    </MiniBox>
+    <MiniBox label="Git">
       <Git />
-    </div>
+    </MiniBox>
   </div>
 </Section>

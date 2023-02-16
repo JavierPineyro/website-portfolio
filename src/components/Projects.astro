@@ -6,9 +6,9 @@ import Subtitle from '@components/ui/Subtitle.astro'
 import { Projects } from 'src/utils/data'
 ---
 
-<Section id="proyectos" className="flex flex-col gap-6 text-white">
+<Section id="proyectos" className="gap-6">
   <!-- Acá agregue el mt a 32, estaba en 10 o 20, creo 10 -->
-  <Subtitle className="mt-5 sm:mt-10">Proyectos</Subtitle>
+  <Subtitle className="">Proyectos</Subtitle>
   <div class="flex flex-col gap-6 sm:grid sm:grid-cols-2">
     {
       Projects.map((item) => {

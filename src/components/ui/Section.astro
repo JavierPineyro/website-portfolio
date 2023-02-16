@@ -7,6 +7,6 @@ type Props = {
 const { id, className } = Astro.props
 ---
 
-<section id={id} class={`mt-10 mb-10 sm:mt-20 sm:mb-20 ${className}`}>
+<section id={id} class={`flex flex-col text-white my-10 sm:my-20 ${className}`}>
   <slot />
 </section>
