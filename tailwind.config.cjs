@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 const { withAnimations } = require('animated-tailwindcss')
 
 module.exports = withAnimations({
@@ -7,11 +8,11 @@ module.exports = withAnimations({
     extend: {
       colors: {
         primary: '#151515',
-        whity: {
-          100: '#e3e3e3',
-          300: '#c3c3c3',
-          500: '#a3a3a3',
-        },
+        main: '#fb7185',
+        'mid-main': '#fb7185',
+        'light-main': '#fda4af',
+        navigation: '#18181b',
+        lightGray: '#f3f4f6',
       },
     },
   },
