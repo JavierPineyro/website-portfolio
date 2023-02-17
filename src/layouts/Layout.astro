@@ -5,6 +5,7 @@ type Props = {
 }
 
 const { title, description } = Astro.props
+const IS_DEVELOPMENT = import.meta.env.DEV
 ---
 
 <html lang="es">
@@ -16,11 +17,15 @@ const { title, description } = Astro.props
     <meta name="description" content={description} />
     <title>{title}</title>
   </head>
-  <body>
-    <div class="animate-fadeIn min-h-screen">
-      <p class="before:content-['🔨'] w-full text-center text-yellow-300 p-3">
-        Sitio web en construcción🔨
-      </p>
+  <body id="body_to_scroll">
+    <div class="relative animate-fadeIn min-h-screen">
+      {
+        !IS_DEVELOPMENT && (
+          <p class="fixed z-9999 bg-navigation/95 rounded-xl left-8 bottom-8 before:content-['🔨'] text-center text-yellow-300 border-[1px] border-yellow-300 p-3">
+            Sitio web en construcción🔨
+          </p>
+        )
+      }
       <slot />
     </div>
   </body>
@@ -34,6 +39,23 @@ const { title, description } = Astro.props
   }
   :global(html) {
     scroll-behavior: smooth;
+  }
+
+  #body_to_scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #151515;
+  }
+
+  #body_to_scroll::-webkit-scrollbar {
+    width: 12px;
+    background-color: #151515;
+  }
+
+  #body_to_scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #fb7185;
   }
 
   @media (prefers-reduced-motion: reduce) {
