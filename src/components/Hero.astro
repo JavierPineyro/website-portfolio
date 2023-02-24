@@ -7,7 +7,7 @@ import Section from '@components/ui/Section.astro'
 
 <Section
   id="hero"
-  className="text-white font-extrabold [&>div>span]:text-3xl my-auto flex flex-col gap-2 md:[&>div>span]:text-6xl md:gap-5"
+  className="text-white font-extrabold [&>div>span]:text-3xl my-auto flex flex-col gap-2 md:[&>div>span]:text-6xl md:gap-5 md:mt-56 md:mb-36"
 >
   <h1 class="text-3xl sm:text-5xl md:text-7xl">
     <span class="hidden sm:inline-block">Hey!</span> Soy Javier Piñeyro<span
@@ -23,10 +23,10 @@ import Section from '@components/ui/Section.astro'
     <span>💻</span>
   </div>
   <div class="flex flex-col gap-2 sm:my-auto sm:flex-row sm:gap-1">
-    <p class="text-md uppercase font-bold sm:text-xl">Encuéntrame en:</p>
+    <p class="text-md text-lightGray font-bold sm:text-xl">Encuéntrame en:</p>
     <div class="flex flex-wrap gap-2 sm:gap-4 sm:ml-2">
       <ExternalLink
-        className="hover:text-main active:bg-gray-00 active:bg-navigation active:text-main text-white border-main rounded border-[1px] font-semibold px-4 py-1"
+        className="hover:text-main active:bg-gray-00 active:bg-navigation active:text-main text-lightGray border-main rounded border-[1px] font-semibold px-4 py-1"
         seoTitle="Github Profile"
         url="https://github.com/javierpineyro"
       >
@@ -34,11 +34,11 @@ import Section from '@components/ui/Section.astro'
         <Github
           width="24"
           height="24"
-          classNames="fill-white group-hover:fill-main"
+          classNames="fill-lightGray group-hover:fill-main"
         />
       </ExternalLink>
       <ExternalLink
-        className=" hover:text-main active:bg-gray-00 active:bg-navigation active:text-main text-white border-main rounded border-[1px] font-semibold px-4 py-1"
+        className=" hover:text-main active:bg-gray-00 active:bg-navigation active:text-main text-lightGray border-main rounded border-[1px] font-semibold px-4 py-1"
         seoTitle="LinkedIn Profile"
         url="https://www.linkedin.com/in/dario-javier-piñeyro"
       >

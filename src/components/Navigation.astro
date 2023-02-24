@@ -10,7 +10,7 @@ import { Links } from 'src/utils/data'
 ---
 
 <header
-  class="flex flex-col sm:flex-row justify-between items-center py-4 px-4 sm:px-16 sm:sticky sm:top-0 backdrop-blur-2xl shadow-md bg-navigation/95"
+  class="flex flex-col sm:flex-row justify-between items-center py-4 px-4 sm:px-16 sm:fixed w-full sm:right-0 sm:top-0 backdrop-blur-2xl shadow-md bg-navigation/95"
 >
   <div
     class="w-20 h-20 rounded-full md:hover:scale-110 transition overflow-hidden"
@@ -26,10 +26,10 @@ import { Links } from 'src/utils/data'
   </div>
 
   <nav
-    class="flex font-semibold flex-wrap gap-3 mt-4 justify-center sm:mt-0 sm:flex-nowrap sm:gap-4 items-center text-lightGray sm:leading-6"
+    class="flex font-semibold flex-wrap gap-3 mt-4 justify-center sm:mt-0 sm:flex-nowrap sm:gap-6 items-center text-lightGray sm:leading-6"
   >
     {Links.map((link) => <LinkNav url={link.url} label={link.label} />)}
-    <span class="hidden sm:inline-block select-none mx-1">|</span>
+    <!-- <span class="hidden sm:inline-block select-none mx-1">|</span>
     <LogosLink url="https://github.com/javierpineyro">
       <Github
         width="30"
@@ -37,6 +37,6 @@ import { Links } from 'src/utils/data'
         seoTitle="Repository"
         classNames="hidden transition fill-lightGray group-hover:fill-main sm:inline-block "
       />
-    </LogosLink>
+    </LogosLink> -->
   </nav>
 </header>
