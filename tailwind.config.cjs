@@ -12,7 +12,7 @@ module.exports = withAnimations({
         'mid-main': '#fb7185',
         'light-main': '#fda4af',
         navigation: '#18181b',
-        lightGray: '#f3f4f6',
+        lightGray: '#d1d5db',
       },
     },
   },
