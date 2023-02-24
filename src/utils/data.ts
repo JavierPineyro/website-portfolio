@@ -61,5 +61,16 @@ export const Projects = [
       {name: "ChakraUI", color:"text-lime-500 border-lime-500"}, 
       {name: "Vite", color: "text-orange-500 border-orange-500"}
     ]
+  },
+  {
+    title: "Mini Tienda w/ Shopping Cart",
+    description: "Mini Ecommerce con carrito de compras",
+    url: "https://github.com/JavierPineyro/mini-cart",
+    repo: "https://github.com/JavierPineyro/mini-cart",
+    stack: [
+      {name: "React", color: "text-pink-400 border-pink-400"}, 
+      {name: "Typescript", color:"text-sky-500 border-sky-500"}, 
+      {name: "Tailwind", color: "text-cyan-300 border-cyan-300"}
+    ]
   }
 ]
