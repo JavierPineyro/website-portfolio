@@ -23,6 +23,14 @@ import { Links } from 'src/utils/data'
     class="flex font-semibold flex-wrap gap-3 mt-4 justify-center sm:mt-0 sm:flex-nowrap sm:gap-6 items-center text-lightGray sm:leading-6"
   >
     {Links.map((link) => <LinkNav url={link.url} label={link.label} />)}
+    <span class="hidden sm:inline-block select-none mx-1">|</span>
+    <div class="hidden sm:block flex justify-center items-center">
+      <a
+        class="py-1 px-3 text-main transition hover:text-white font-semibold"
+        href="/cv-pineyrodario.pdf"
+        download>Descarga cv</a
+      >
+    </div>
     <!-- <span class="hidden sm:inline-block select-none mx-1">|</span>
     <LogosLink url="https://github.com/javierpineyro">
       <Github
