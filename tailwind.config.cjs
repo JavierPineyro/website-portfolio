@@ -6,9 +6,7 @@ module.exports = withAnimations({
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
-      backgroundImage: {
-        dots: "url('/bg-dots.png')",
-      },
+      backgroundImage: {},
       colors: {
         primary: '#151515',
         main: '#fb7185',
