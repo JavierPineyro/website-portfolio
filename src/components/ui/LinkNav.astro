@@ -7,7 +7,7 @@ type Props = {
 const { url, label, className } = Astro.props
 ---
 
-<a href={url} class={`text-lightGray text-xl ${className}`}>
+<a id="link" href={url} class={`text-lightGray text-xl ${className}`}>
   {label}
 </a>
 
@@ -47,5 +47,11 @@ const { url, label, className } = Astro.props
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
+  }
+
+  @media (min-width: 640px) and (max-width: 710px) {
+    #link {
+      font-size: 1.1rem;
+    }
   }
 </style>

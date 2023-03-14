@@ -9,12 +9,12 @@ import Section from '@components/ui/Section.astro'
   id="hero"
   className="text-white font-extrabold p-4 mx-auto flex flex-col [&>div>span]:text-3xl gap-2 sm:max-w-5xl sm:p-2 md:[&>div>span]:text-6xl md:gap-5"
 >
-  <h1 class="text-3xl sm:text-5xl md:text-7xl">
+  <h1 id="maintitle" class="text-3xl sm:text-5xl md:text-7xl">
     <span class="hidden sm:inline-block">Hey!</span>
     Soy Javier Piñeyro
     <span class="text-3xl sm:text-4xl md:text-6xl">🥇</span>
   </h1>
-  <div class="w-fit mb-10 sm:mb-14 overflow-hidden">
+  <div id="mainlabel" class="w-fit mb-10 sm:mb-14 overflow-hidden">
     <span
       class="bg-clip-text text-transparent bg-gradient-to-r from-light-main via-mid-main to-main"
     >
@@ -48,3 +48,23 @@ import Section from '@components/ui/Section.astro'
     </div>
   </div>
 </Section>
+
+<style>
+  @media (max-width: 360px) {
+    #maintitle {
+      font-size: 1.6rem;
+    }
+    #mainlabel span {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (min-width: 555px) and (max-width: 630px) {
+    #maintitle {
+      font-size: 3rem;
+    }
+    #mainlabel span {
+      font-size: 2.8rem;
+    }
+  }
+</style>
