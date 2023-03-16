@@ -1,8 +1,6 @@
 ---
-import Email from '@components/icons/Email.astro'
-import Github from '@components/icons/Github.astro'
-import LinkedIn from '@components/icons/LinkedIn.astro'
-import ExternalLink from '@components/ui/ExternalLink.astro'
+import Building from '@components/ui/Building.astro'
+import Social from '@components/ui/Social.astro'
 
 type Props = {
   title: string
@@ -10,7 +8,6 @@ type Props = {
 }
 
 const { title, description } = Astro.props
-const IS_DEVELOPMENT = import.meta.env.DEV
 ---
 
 <html class="scroll-smooth" lang="es">
@@ -24,42 +21,8 @@ const IS_DEVELOPMENT = import.meta.env.DEV
   </head>
   <body id="body_to_scroll">
     <div class="relative animate-fadeIn min-h-screen">
-      {
-        !IS_DEVELOPMENT && (
-          <p class="fixed z-9999 bg-navigation/95 rounded-xl left-8 bottom-8 before:content-['🔨'] text-center text-yellow-300 border-[1px] border-yellow-300 p-3">
-            Sitio web en construcción🔨
-          </p>
-        )
-      }
-      <div
-        class="fixed z-9999 bg-navigation/95 rounded-xl right-4 bottom-20 sm:right-4 sm:bottom-20 text-center"
-      >
-        <ExternalLink
-          className=" hover:text-main active:text-light-main text-white rounded  px-4 py-1"
-          seoTitle="LinkedIn Profile"
-          url="https://www.linkedin.com/in/dario-javier-piñeyro"
-        >
-          <LinkedIn width="24" height="24" />
-        </ExternalLink>
-        <ExternalLink
-          className="hover:text-main active:text-light-main text-white rounded  px-4 py-1"
-          seoTitle="Email address"
-          url="mailto:dariojavierpineyro@gmail.com?subject='Propuesta de Trabajo para Javier Piñeyro'"
-        >
-          <Email width="28" height="28" />
-        </ExternalLink>
-        <ExternalLink
-          className="hover:text-main group text-white rounded px-4 py-1"
-          seoTitle="Github Profile"
-          url="https://github.com/javierpineyro"
-        >
-          <Github
-            width="26"
-            height="26"
-            classNames="fill-white group-active:fill-light-main group-hover:fill-main"
-          />
-        </ExternalLink>
-      </div>
+      <Building />
+      <Social />
       <slot />
     </div>
   </body>
@@ -91,8 +54,8 @@ const IS_DEVELOPMENT = import.meta.env.DEV
 
   @media (max-width: 550px) {
     body {
-      background-image: radial-gradient(#fb718599 1px, transparent 1px),
-        radial-gradient(#fb718599 1px, transparent 1px);
+      background-image: radial-gradient(#fb71867c 1px, transparent 1px),
+        radial-gradient(#fb71867c 1px, transparent 1px);
       background-position: 0 0, 25px 25px;
       background-size: 50px 50px;
     }

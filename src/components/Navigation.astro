@@ -7,7 +7,7 @@ import { Links } from 'src/utils/data'
   class="flex flex-col sm:flex-row justify-between items-center py-4 px-4 sm:px-16 sm:fixed w-full sm:right-0 sm:top-0 backdrop-blur-sm shadow-md bg-navigation/95"
 >
   <picture
-    class="w-20 h-20 rounded-full md:hover:scale-110 transition overflow-hidden"
+    class="w-16 h-16 rounded-full md:hover:scale-110 transition overflow-hidden"
   >
     <a href="#top">
       <img
@@ -20,13 +20,13 @@ import { Links } from 'src/utils/data'
   </picture>
 
   <nav
-    class="flex font-semibold flex-wrap gap-3 mt-4 justify-center sm:mt-0 sm:flex-nowrap sm:gap-6 items-center text-lightGray sm:leading-6"
+    class="flex flex-wrap gap-3 justify-center mt-1 sm:mt-0 sm:flex-nowrap sm:gap-6 items-center text-lightGray sm:leading-6"
   >
     {Links.map((link) => <LinkNav url={link.url} label={link.label} />)}
     <span class="hidden sm:inline-block select-none mx-1">|</span>
     <div class="hidden sm:block flex justify-center items-center">
       <a
-        class="py-1 px-3 text-main transition hover:text-white font-semibold"
+        class="py-1 px-3 text-main transition hover:text-white font-normal"
         href="/cv-pineyrodario.pdf"
         download>Descarga cv</a
       >
