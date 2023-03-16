@@ -1,0 +1,11 @@
+---
+const IS_DEVELOPMENT = import.meta.env.DEV
+---
+
+{
+  !IS_DEVELOPMENT && (
+    <p class="fixed z-9999 bg-navigation/95 rounded-xl left-8 bottom-8 before:content-['🔨'] text-center text-yellow-300 border-[1px] border-yellow-300 p-3">
+      Sitio web en construcción🔨
+    </p>
+  )
+}
