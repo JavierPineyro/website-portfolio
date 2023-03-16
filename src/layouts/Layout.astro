@@ -1,4 +1,9 @@
 ---
+import Email from '@components/icons/Email.astro'
+import Github from '@components/icons/Github.astro'
+import LinkedIn from '@components/icons/LinkedIn.astro'
+import ExternalLink from '@components/ui/ExternalLink.astro'
+
 type Props = {
   title: string
   description: string
@@ -26,6 +31,35 @@ const IS_DEVELOPMENT = import.meta.env.DEV
           </p>
         )
       }
+      <div
+        class="fixed z-9999 bg-navigation/95 rounded-xl right-4 bottom-20 sm:right-4 sm:bottom-20 text-center"
+      >
+        <ExternalLink
+          className=" hover:text-main active:text-light-main text-white rounded  px-4 py-1"
+          seoTitle="LinkedIn Profile"
+          url="https://www.linkedin.com/in/dario-javier-piñeyro"
+        >
+          <LinkedIn width="24" height="24" />
+        </ExternalLink>
+        <ExternalLink
+          className="hover:text-main active:text-light-main text-white rounded  px-4 py-1"
+          seoTitle="Email address"
+          url="mailto:dariojavierpineyro@gmail.com?subject='Propuesta de Trabajo para Javier Piñeyro'"
+        >
+          <Email width="28" height="28" />
+        </ExternalLink>
+        <ExternalLink
+          className="hover:text-main group text-white rounded px-4 py-1"
+          seoTitle="Github Profile"
+          url="https://github.com/javierpineyro"
+        >
+          <Github
+            width="26"
+            height="26"
+            classNames="fill-white group-active:fill-light-main group-hover:fill-main"
+          />
+        </ExternalLink>
+      </div>
       <slot />
     </div>
   </body>
