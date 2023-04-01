@@ -90,6 +90,13 @@ const tech = {
       border: "border-cyan-200"
     }
   },
+  cssmodules: {
+    name: "Css modules",
+    colors: {
+      text: "text-fuchsia-400",
+      border: "border-fuchsia-400"
+    }
+  },
   vite: {
     name: "Vite",
     colors: {
@@ -128,6 +135,26 @@ const tech = {
 }
 
 export const Projects = [
+  {
+    title: "Weather app",
+    description: "App del clima para saber la condición meteorológica de una ciudad",
+    url: "https://weadr.vercel.app",
+    repo: "https://github.com/JavierPineyro/weadr",
+    stack: [
+      {
+        name: tech.react.name, 
+        color: `${tech.react.colors.text} ${tech.react.colors.border}`
+      }, 
+      {
+        name: tech.cssmodules.name, 
+        color: `${tech.cssmodules.colors.text} ${tech.cssmodules.colors.border}`
+      },
+      {
+        name: tech.vite.name, 
+        color: `${tech.vite.colors.text} ${tech.vite.colors.border}`
+      }, 
+    ]
+  },
   {
     title: "Juego Tic-Tac-Toe",
     description: "Mini juego construído con React y Tailwind",
@@ -209,8 +236,8 @@ export const Projects = [
     ]
   },
   {
-    title: "Mini Tienda w/ Shopping Cart",
-    description: "Mini Ecommerce con carrito de compras",
+    title: "Shopping Cart",
+    description: "Carrito de compras con Context Api",
     url: "https://github.com/JavierPineyro/mini-cart",
     repo: "https://github.com/JavierPineyro/mini-cart",
     stack: [
