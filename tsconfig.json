@@ -2,6 +2,7 @@
   "extends": "astro/tsconfigs/strict",
   "include": ["**/*.ts", "**/*.tsx", "**/*.astro", ".eslintrc.cjs"],
   "compilerOptions": {
+    "ignoreDeprecations": "5.0",
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "baseUrl": ".",
