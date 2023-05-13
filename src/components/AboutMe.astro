@@ -6,7 +6,7 @@ import Highlight from './ui/Highlight.astro'
 
 <Section id="sobremi" className="">
   <Subtitle>Sobre mí</Subtitle>
-  <div class="max-w-[100ch] mt-4 mb-10 text-gray-200">
+  <div class="cont max-w-[100ch] mt-4 mb-10 text-gray-200">
     <p>
       Soy estudiante casi graduado de <Highlight>
         Tecnicatura Superior en Análisis de Sistemas
@@ -15,14 +15,14 @@ import Highlight from './ui/Highlight.astro'
       </Highlight> y puedo comunicarme correctamente.
     </p>
     <br />
-    <p>
+    <p class="text-bala">
       En 2021, <Highlight>lideré un equipo</Highlight>de estudiantes en el
       desarrollo de un sistema (bolsa de empleo) para el instituto en el que
       estudio, donde
       <Highlight>guié y acompañé</Highlight> a compañeros con menos experiencia en
       programación. Esto me permitió mejorar mis habilidades de <Highlight>
-        trabajo en equipo, comunicación y gestión del tiempo 💪🏼
-      </Highlight>.
+        trabajo en equipo</Highlight> 🤝, <Highlight>comunicación</Highlight>  y <Highlight>gestión del tiempo</Highlight>⏰.
+      
     </p>
     <br />
     <p>
@@ -32,9 +32,13 @@ import Highlight from './ui/Highlight.astro'
     </p>
     <br />
     <p>
-      Podés contactarme por mi LinkedIn, por teléfono o por correo electrónico.
-      <br />
       ¡Gracias por llegar hasta acá y por tu interes!✨
     </p>
   </div>
 </Section>
+
+<style>
+  p{
+    text-wrap: balance;
+  }
+</style>
