@@ -4,9 +4,9 @@ import { Links } from 'src/utils/data'
 ---
 
 <header
-  class="flex flex-col sm:flex-row justify-between items-center py-4 px-4 sm:px-16 sm:fixed w-full sm:right-0 sm:top-0 backdrop-blur-sm shadow-md bg-navigation/95"
+  class="flex flex-col z-50 sm:flex-row justify-center items-center py-4 px-4 sm:px-16 sm:fixed w-full sm:right-0 sm:top-0 backdrop-blur-sm shadow-md bg-navigation/95"
 >
-  <picture
+  <!-- <picture
     class="w-16 h-16 rounded-full md:hover:scale-110 transition overflow-hidden"
   >
     <a href="#top">
@@ -17,18 +17,18 @@ import { Links } from 'src/utils/data'
         title="Este soy yo :D"
       />
     </a>
-  </picture>
+  </picture> -->
 
   <nav
-    class="flex flex-wrap gap-3 justify-center mt-1 sm:mt-0 sm:flex-nowrap sm:gap-6 items-center text-lightGray sm:leading-6"
+    class="flex flex-wrap gap-3 justify-center mt-1 sm:mt-0 sm:flex-nowrap sm:gap-6 items-center text-white sm:leading-8 font-semibold"
   >
     {Links.map((link) => <LinkNav url={link.url} label={link.label} />)}
-    <span class="hidden sm:inline-block select-none mx-1">|</span>
-    <div class="hidden sm:block flex justify-center items-center">
+    <!-- <span class="hidden sm:inline-block select-none mx-1">|</span> -->
+    <div class="hidden sm:flex justify-center items-center">
       <a
-        class="py-1 px-3 text-main transition hover:text-white font-normal"
+        class="py-1 px-3 text-main transition text-[1rem] sm:text-[1.2rem] hover:text-white font-semibold"
         href="/cv-pineyrodario.pdf"
-        download>Descarga cv</a
+        download>Descargar cv</a
       >
     </div>
   </nav>

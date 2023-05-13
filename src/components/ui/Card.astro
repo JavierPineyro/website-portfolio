@@ -16,7 +16,7 @@ type Props = {
 
 const { title, description, stack, url, repo, className } = Astro.props
 ---
-
+<!-- https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_55,w_1051/v1684009911/shurly-video_g2bhxn.webm -->
 <article
   class={`bg-navigation flex flex-col gap-2  py-4 px-3 text-gray-400 rounded overflow-hidden shadow-md ${className}`}
 >
@@ -37,6 +37,11 @@ const { title, description, stack, url, repo, className } = Astro.props
       />
     </LogosLink>
   </header>
+  <div>
+    <video src="https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_55,w_1051/v1684009911/shurly-video_g2bhxn.webm" loop class="-z-10 object-center object-cover h-full w-full"
+    autoplay
+    muted />
+  </div>
   <p class="text-sm mb-2">{description}</p>
   <footer class="flex gap-1 sm:gap-2">
     {

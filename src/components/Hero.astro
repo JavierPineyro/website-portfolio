@@ -1,20 +1,16 @@
 ---
-import ExternalLink from '@components/ui/ExternalLink.astro'
-import Github from '@components/icons/Github.astro'
-import LinkedIn from '@components/icons/LinkedIn.astro'
 import Section from '@components/ui/Section.astro'
 ---
 
 <Section
   id="hero"
-  className="text-white font-extrabold p-4 mx-auto [&>div>span]:text-3xl gap-2 sm:max-w-5xl md:[&>div>span]:text-6xl md:gap-5 md:pt-[200px]"
+  className="text-white animate-fadeIn animate-delay-[.2s] flex justify-center items-center font-extrabold p-4 mx-auto [&>div>span]:text-3xl gap-2 sm:max-w-5xl md:[&>div>span]:text-6xl md:gap-5 md:pt-[200px]"
 >
-  <h1 id="maintitle" class="text-3xl sm:text-5xl md:text-7xl">
+  <h1 id="maintitle" class="text-3xl sm:text-4xl md:text-7xl">
     <span class="hidden sm:inline-block">Hey!</span>
     Soy Javier Piñeyro
-    <span class="text-3xl sm:text-4xl md:text-6xl">🥇</span>
   </h1>
-  <div id="mainlabel" class="w-fit mb-10 sm:mb-14 overflow-hidden">
+  <div id="mainlabel" class="w-fit lg:text-5xl mb-10 sm:mb-14 overflow-hidden">
     <span
       class="bg-clip-text text-transparent bg-gradient-to-r from-light-main via-mid-main to-main"
     >
@@ -23,7 +19,7 @@ import Section from '@components/ui/Section.astro'
     <span>💻</span>
   </div>
   <!-- Here goes the code below -->
-  <div class="px-2 py-0">
+  <div class="px-2 py-0 text-center">
     <p class="text-[15px] font-semibold max-w-[50ch] text-lightGray sm:text-xl">
       Especialista en <span class="text-white underline">Frontend</span> con fuertes
       conocimientos en <span class="text-white underline">Backend</span> y <span
