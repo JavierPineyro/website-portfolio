@@ -1,13 +1,15 @@
 ---
 type Props = {
   url: string
+  ariaLabel: string
 }
-const { url } = Astro.props
+const { url, ariaLabel } = Astro.props
 ---
 
 <a
   class="h-fit group text-white hover:text-main"
   href={url}
+  aria-label={ariaLabel}
   target="_blank"
   rel="noopener noreferrer"
 >

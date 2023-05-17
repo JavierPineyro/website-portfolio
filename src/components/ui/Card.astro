@@ -29,7 +29,7 @@ const { title, thumnail, description, stack, url, repo, className } = Astro.prop
       {title}
       <ArrowIcon />
     </ExternalLink>
-    <LogosLink url={repo}>
+    <LogosLink ariaLabel={`Ir al repositorio del proyecto ${title}`} url={repo}>
       <Github
         width="20"
         height="20"
