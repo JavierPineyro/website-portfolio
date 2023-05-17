@@ -145,7 +145,7 @@ export const Projects = [
   {
     title: "Weather app",
     description: "App del clima para saber la condición meteorológica de una ciudad",
-    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_55,w_1051/v1684022427/weadr-video_x6ypns.webm",
+    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684022427/weadr-video_x6ypns.webm",
     url: "https://weadr.vercel.app",
     repo: "https://github.com/JavierPineyro/weadr",
     stack: [
@@ -166,7 +166,7 @@ export const Projects = [
   {
     title: "Shurly acortador de links",
     description: "Acorta tus urls fácil, rápido y sin registrarte!",
-    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_55,w_1051/v1684009911/shurly-video_g2bhxn.webm",
+    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684009911/shurly-video_g2bhxn.webm",
     url: "https://shurly-vikf.onrender.com/",
     repo: "https://github.com/JavierPineyro/shurly",
     stack: [
@@ -187,7 +187,7 @@ export const Projects = [
   {
     title: "Search Country App",
     description: "Web app para buscar información sobre países",
-    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_55,w_1051/v1684022421/country-search-video_vhanyz.webm",
+    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684022421/country-search-video_vhanyz.webm",
     url: "https://search-country-javierpineyro.vercel.app/",
     repo: "https://github.com/JavierPineyro/next-country",
     stack: [
@@ -208,7 +208,7 @@ export const Projects = [
   {
     title: "Juego Tic-Tac-Toe",
     description: "Mini juego construído con React y Tailwind",
-    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_55,w_1051/v1684022413/tictactoe-video_xtyplo.webm",
+    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684022413/tictactoe-video_xtyplo.webm",
     url: "https://tic-tac-toe-vite-javierpineyro.vercel.app/",
     repo: "https://github.com/JavierPineyro/tic-tac-toe-vite",
     stack: [
@@ -229,7 +229,7 @@ export const Projects = [
   {
     title: "TODO app",
     description: "Aplicación Web TO-DO para organizar tareas",
-    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_55,w_1051/v1684278943/todo-chakra-video_kq31fo.webm",
+    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684278943/todo-chakra-video_kq31fo.webm",
     url: "https://javierpineyro.github.io/to-do-chakra/",
     repo: "https://github.com/JavierPineyro/to-do-chakra",
     stack: [
@@ -250,7 +250,7 @@ export const Projects = [
   {
     title: "Advency challenge",
     description: "Code challenge de navidad de GoncyPozzo",
-    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_55,w_1051/v1684022419/advency-videowebm_xuoa4s.webm",
+    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684022419/advency-videowebm_xuoa4s.webm",
     url: "https://javierpineyro.github.io/advency-challenge/",
     repo: "https://github.com/JavierPineyro/advency-challenge",
     stack: [

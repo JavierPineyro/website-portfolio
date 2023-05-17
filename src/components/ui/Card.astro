@@ -39,9 +39,9 @@ const { title, thumnail, description, stack, url, repo, className } = Astro.prop
     </LogosLink>
   </header>
   <div>
-    <video src={thumnail} loop class="-z-10 object-center object-cover h-full w-full"
-    autoplay
-    muted />
+    <video autoplay loop muted src={thumnail} 
+      class="-z-10 object-center object-cover h-full w-full"
+    />
   </div>
   <p class="text-sm mb-2">{description}</p>
   <footer class="flex gap-1 sm:gap-2">
