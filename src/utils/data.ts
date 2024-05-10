@@ -143,23 +143,24 @@ const tech = {
 
 export const Projects = [
   {
-    title: "Weather app",
-    description: "App del clima para saber la condición meteorológica de una ciudad",
-    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684022427/weadr-video_x6ypns.webm",
-    url: "https://weadr.vercel.app",
-    repo: "https://github.com/JavierPineyro/weadr",
+    title: "Aplicación de Gestión Turnos",
+    description: "App para la gestión turnos para la peluquería/barbería 'Club de Caballeros'",
+    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1715355878/peluqueria_yxxryv.webm",
+    
+    url: "https://club-de-caballeros.vercel.app",
+    repo: "https://github.com/JavierPineyro/peluqueria-turnos",
     stack: [
       {
-        name: tech.react.name,
-        color: `${tech.react.colors.text} ${tech.react.colors.border}`
+        name: tech.nextjs.name,
+        color: `${tech.nextjs.colors.text} ${tech.nextjs.colors.border}`
       },
       {
-        name: tech.cssmodules.name,
-        color: `${tech.cssmodules.colors.text} ${tech.cssmodules.colors.border}`
+        name: tech.typescript.name,
+        color: `${tech.typescript.colors.text} ${tech.typescript.colors.border}`
       },
       {
-        name: tech.vite.name,
-        color: `${tech.vite.colors.text} ${tech.vite.colors.border}`
+        name: "PostgreSQL",
+        color: `${tech.tailwind.colors.text} ${tech.tailwind.colors.border}`
       },
     ]
   },
@@ -185,6 +186,27 @@ export const Projects = [
     ]
   },
   {
+    title: "Weather app",
+    description: "App del clima para saber la condición meteorológica de una ciudad",
+    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684022427/weadr-video_x6ypns.webm",
+    url: "https://weadr.vercel.app",
+    repo: "https://github.com/JavierPineyro/weadr",
+    stack: [
+      {
+        name: tech.react.name,
+        color: `${tech.react.colors.text} ${tech.react.colors.border}`
+      },
+      {
+        name: tech.cssmodules.name,
+        color: `${tech.cssmodules.colors.text} ${tech.cssmodules.colors.border}`
+      },
+      {
+        name: tech.vite.name,
+        color: `${tech.vite.colors.text} ${tech.vite.colors.border}`
+      },
+    ]
+  },
+  {
     title: "Search Country App",
     description: "Web app para buscar información sobre países",
     thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684022421/country-search-video_vhanyz.webm",
@@ -205,48 +227,48 @@ export const Projects = [
       },
     ]
   },
-  {
-    title: "Juego Tic-Tac-Toe",
-    description: "Mini juego construído con React y Tailwind",
-    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684022413/tictactoe-video_xtyplo.webm",
-    url: "https://tic-tac-toe-vite-javierpineyro.vercel.app/",
-    repo: "https://github.com/JavierPineyro/tic-tac-toe-vite",
-    stack: [
-      {
-        name: tech.react.name,
-        color: `${tech.react.colors.text} ${tech.react.colors.border}`
-      },
-      {
-        name: tech.tailwind.name,
-        color: `${tech.tailwind.colors.text} ${tech.tailwind.colors.border}`
-      },
-      {
-        name: tech.vite.name,
-        color: `${tech.vite.colors.text} ${tech.vite.colors.border}`
-      },
-    ]
-  },
-  {
-    title: "TODO app",
-    description: "Aplicación Web TO-DO para organizar tareas",
-    thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684278943/todo-chakra-video_kq31fo.webm",
-    url: "https://javierpineyro.github.io/to-do-chakra/",
-    repo: "https://github.com/JavierPineyro/to-do-chakra",
-    stack: [
-      {
-        name: tech.react.name,
-        color: `${tech.react.colors.text} ${tech.react.colors.border}`
-      },
-      {
-        name: tech.chakraui.name,
-        color: `${tech.chakraui.colors.text} ${tech.chakraui.colors.border}`
-      },
-      {
-        name: tech.vite.name,
-        color: `${tech.vite.colors.text} ${tech.vite.colors.border}`
-      }
-    ]
-  },
+  // {
+  //   title: "Juego Tic-Tac-Toe",
+  //   description: "Mini juego construído con React y Tailwind",
+  //   thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684022413/tictactoe-video_xtyplo.webm",
+  //   url: "https://tic-tac-toe-vite-javierpineyro.vercel.app/",
+  //   repo: "https://github.com/JavierPineyro/tic-tac-toe-vite",
+  //   stack: [
+  //     {
+  //       name: tech.react.name,
+  //       color: `${tech.react.colors.text} ${tech.react.colors.border}`
+  //     },
+  //     {
+  //       name: tech.tailwind.name,
+  //       color: `${tech.tailwind.colors.text} ${tech.tailwind.colors.border}`
+  //     },
+  //     {
+  //       name: tech.vite.name,
+  //       color: `${tech.vite.colors.text} ${tech.vite.colors.border}`
+  //     },
+  //   ]
+  // },
+  // {
+  //   title: "TODO app",
+  //   description: "Aplicación Web TO-DO para organizar tareas",
+  //   thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684278943/todo-chakra-video_kq31fo.webm",
+  //   url: "https://javierpineyro.github.io/to-do-chakra/",
+  //   repo: "https://github.com/JavierPineyro/to-do-chakra",
+  //   stack: [
+  //     {
+  //       name: tech.react.name,
+  //       color: `${tech.react.colors.text} ${tech.react.colors.border}`
+  //     },
+  //     {
+  //       name: tech.chakraui.name,
+  //       color: `${tech.chakraui.colors.text} ${tech.chakraui.colors.border}`
+  //     },
+  //     {
+  //       name: tech.vite.name,
+  //       color: `${tech.vite.colors.text} ${tech.vite.colors.border}`
+  //     }
+  //   ]
+  // },
   {
     title: "Advency challenge",
     description: "Code challenge de navidad de GoncyPozzo",
