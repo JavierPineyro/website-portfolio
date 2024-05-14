@@ -1,16 +1,15 @@
 ---
-import Card from '@ui/Card.astro'
-import Section from '@components/ui/Section.astro'
-import Subtitle from '@components/ui/Subtitle.astro'
-
-import { Projects } from 'src/utils/data'
+import Card from "@ui/Card.astro";
+import Section from "@components/ui/Section.astro";
+import Subtitle from "@components/ui/Subtitle.astro";
+import { ProjectsList } from "src/utils/data";
 ---
 
 <Section id="proyectos" className="gap-6">
   <Subtitle className="mt-0">Proyectos</Subtitle>
   <div class="flex flex-col gap-6 sm:grid sm:grid-cols-2">
     {
-      Projects.map((item) => {
+      ProjectsList.map((item) => {
         return (
           <Card
             className=""
@@ -21,7 +20,7 @@ import { Projects } from 'src/utils/data'
             url={item.url}
             repo={item.repo}
           />
-        )
+        );
       })
     }
   </div>
