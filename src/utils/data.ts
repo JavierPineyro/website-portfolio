@@ -129,7 +129,7 @@ export const ProjectsList: Project[] = [
       }
     ]
   },
-  {
+  /*{
     title: "Weather app",
     description: "App del clima para saber la condición meteorológica de una ciudad",
     thumnail: "https://res.cloudinary.com/javipineyro/video/upload/c_scale,q_60,w_1051/v1684022427/weadr-video_x6ypns.webm",
@@ -147,6 +147,28 @@ export const ProjectsList: Project[] = [
       {
         name: tech.vite.name,
         color: `${tech.vite.colors.text} ${tech.vite.colors.border}`
+      },
+    ]
+  },*/
+  {
+    title: "Sistema de Gestión del Instituto Zalesak",
+    description: "Sistema de Gestión para un instituto de taekwondo local",
+    //thumnail: "https://res.cloudinary.com/djmwmstro/image/upload/v1738368548/Captura_desde_2025-01-31_21-08-43_gmd7zq.png",
+    thumnail: "https://res.cloudinary.com/djmwmstro/image/upload/v1738368548/Captura_desde_2025-01-31_21-08-43_gmd7zq.png",
+    url: "https://sistema-instituto-zalesak.vercel.app",
+    repo: "https://github.com/JavierPineyro/sistema-instituto-zalesak",
+    stack: [
+      {
+        name: tech.react.name,
+        color: `${tech.react.colors.text} ${tech.react.colors.border}`
+      },
+      {
+        name: tech.typescript.name,
+        color: `${tech.typescript.colors.text} ${tech.typescript.colors.border}`
+      },
+      {
+        name: "PostgreSQL",
+        color: `${tech.tailwind.colors.text} ${tech.tailwind.colors.border}`
       },
     ]
   },
